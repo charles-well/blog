@@ -15,8 +15,8 @@ def index(request):
 @asyncio.coroutine
 def init(loop):
 	yield from orm.create_pool(loop=loop,\
-#			host='1d1816801.gz.cdb.myqcloud.com',\
-#			port=5630,user='root',password='2016@chrome',db='test')
+#			host='',\
+#			port=,user='root',password='',db='test')
 			host='127.0.0.1',\
 			port=3306,user='root',password='1234',db='mysql')
 
